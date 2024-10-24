@@ -1,0 +1,195 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html {
+  font-size: 16 px;
+  /*--bg-black-clr: #0A0908;*/
+  /*--img-black-clr: #22333B;*/
+  /*--txt-black-light-clr: #EAE0D5;*/
+  /*--txt-black-lightbrown-clr: #C6AC8F;*/
+  /*--txt-black-blackbrown-clr: #5E503F;*/
+  --bg-black-clr: #0B132B;
+  --img-black-clr: #22333B;
+  --txt-black-light: #6fffe9;
+  --txt-black-medium: #5bc0be;
+  --txt-black-lightblue: #3a506b;
+  --txt-black-darkblue: #1c2541;
+  --h-after-black: #2b2d42;
+  --txt-black-greyish: #8d99ae;
+  --roboto-font: "Roboto", sans-serif;
+}
+
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  margin: 0 30px;
+
+}
+
+
+body {
+  font-family: "Roboto, sans-serif";
+  font-weight: 300;
+  min-height: 100svh;
+  /*background: #8d99ae;*/
+  background: var(--bg-black-clr);
+  /*background: var(--txt-black-lightbrown-clr);*/
+  margin: 0;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+header {
+  /*--txt-black-lightbrown-clr: #C6AC8F;*/
+  background: var(--txt-black-lightblue);
+  margin: 0;
+}
+
+header::after {
+  background-color: var(--h-after-black);
+  height: 2px;
+  width: 100%;
+}
+
+/*nav {*/
+/*  float: right;*/
+/*}*/
+
+
+.theme::after {
+  margin-left: 10px;
+  font: var(--fa-font-solid);
+  content: "\f013";
+}
+
+.logout {
+  display: none;
+}
+
+.logout::after {
+  margin-left: 10px;
+  font: var(--fa-font-solid);
+  content: "\f2f5";
+}
+
+nav a {
+  /*color: #444;*/
+  color: var(--txt-black-darkblue);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 25px;
+  /*transition: font-weight 1.5s;*/
+
+}
+
+
+
+nav .links a:hover {
+  color: #000;
+  /*border-top: 3px solid #000;*/
+  /*font-weight: 600;*/
+
+}
+
+nav .links a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+.group1 {
+  position: relative;
+  top: 0;
+  flex-grow: 5;
+}
+
+.group2 {
+  position: relative;
+  top: 0;
+  flex-grow: 1;
+}
+
+
+nav .links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--roboto-font);
+  font-size: 1.6rem;
+  /*margin-right: px;*/
+  /*float: left;*/
+}
+
+nav .theme-log-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--roboto-font);
+  font-size: 1.6rem;
+  /*margin-right: 400px;*/
+  /*margin-left: 200px;*/
+}
+
+
+
+.flex {
+  display: flex;
+  /*width: 90%;*/
+  /*justify-content: space-evenly;*/
+  /*align-items: start;*/
+  /*max-width: 80%;*/
+  /*width: 90%;*/
+}
+
+
+nav .links li {
+  display: inline-block;
+  margin-right: 80px;
+  /*margin-right: %;*/
+  /*margin-right*/
+  padding-top: 30px;
+  position: relative;
+}
+
+nav .theme-log-group li {
+  display: inline-block;
+  margin-left: 60px;
+  /*margin-right: %;*/
+  /*margin-right*/
+  padding-top: 30px;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+
+}
+
+.nav-container {
+  /*width: 80%;*/
+  margin: 0 auto;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+}
